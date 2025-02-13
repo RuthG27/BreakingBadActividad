@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Formulario</title>
+</head>
+
+<body class="bodyForm">
+    <h1 class="formTitle">Breaking Bad – Que comience el juego!</h1>
+
+    <form class="form" action="mailto:raul@unir.com" method="get">
+        <fieldset>
+            <legend class="legendForm">Datos Personales:</legend>
+            <label>Nombre</label>
+            <input type="text" placeholder="Escribe tu nombre" required />
+
+            <label> Primer apellido</label>
+            <input type="text" placeholder="Escribe tu primer apellido" required />
+
+            <label> Segundo apellido</label>
+            <input type="text" placeholder="Escribe tu segundo apellido" required />
+            <label>Correo electrónico</label>
+            <input type="email" placeholder="ruth@unir.fp" required />
+
+            <label>Fecha de nacimiento</label>
+            <input type="date" id="fecha" name="fecha" />
+        </fieldset>
+        <fieldset>
+            <legend class="legendForm">Dirección:</legend>
+            <label>Calle</label>
+            <input type="text" placeholder="Escribe el nombre de tu dirección" />
+
+            <label>Número</label>
+            <input type="number" placeholder="Escribe el número" />
+
+            <label>Piso</label>
+            <input type="text" placeholder="Escribe el Piso" />
+
+            <label>Código postal</label>
+            <input type="number" />
+        </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend class="legendForm">Selecciona tu género:</legend>
+            <div class="genderOptions">
+                <label><input type="radio" name="genero" value="masculino" /> Masculino</label>
+                <label><input type="radio" name="genero" value="femenino" /> Femenino</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legendForm">Selecciona favorito:</legend>
+            <input list="listaPersonajes" id="personajes" name="personaje" placeholder="personajes" />
+            <datalist id="listaPersonajes">
+                <option value="Jessie Pinkman"></option>
+                <option value="Walter White"></option>
+                <option value="Saul Goodman"></option>
+                <option value="Gustavo Fring"></option>
+                <option value="Pollos Hermanos"></option>
+                <option value="Otros personajes"></option>
+            </datalist>
+        </fieldset>
+        <fieldset>
+            <legend class="legendForm">Tu opinión es importante:</legend>
+            <textarea placeholder="Escribe aquí tu opinión" maxlength="5"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend class="legendForm">
+                Adjuta tus documentos aquí:
+            </legend>
+            <input type="file" name="adjunto" accept=".pdf" multiple>
+        </fieldset>
+        <div class="formButtons">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar" />
+        </div>
+    </form>
+</body>
+
+</html>

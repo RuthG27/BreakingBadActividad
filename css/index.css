@@ -1,0 +1,207 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 16px;
+
+  --white-color: #fff;
+  --border-color: #ccc;
+  --border-color-brown: brown;
+  --bgd-body-table: #0c3e11;
+  --bgd-table: #2b2e1f;
+  --primary-color: #b8dc1a;
+  --secondary-color: #d5e780;
+  --green-pastel: #eff6ca;
+  --green-main: #8aa41a;
+  --green-light: #bcc49c;
+  --green-dark: #637124;
+  --green-neon: #c5c626;
+  --purple-color: #ab8ece;
+
+  --font-large: 2.5rem;
+  --font-medium: 1.5rem;
+  --font-small: 1.2rem;
+}
+@font-face {
+  font-family: "MiFuenteBreakingBad";
+  src: url("./assets/fonts/breakingBadFuente.ttf") format("truetype");
+}
+
+/* CSS INDEX */
+
+.bodyIndex {
+  background: no-repeat center/cover url("../assets/img/fondo.jpg");
+  font-family: "MiFuenteBreakingBad", sans-serif;
+  height: 95vh;
+  text-align: center;
+}
+
+#imgLogo {
+  display: block;
+  margin: 3rem auto;
+  height: 200px;
+}
+
+#indexTitle {
+  color: var(--white-color);
+}
+
+.containerPoster {
+  display: block;
+  margin: 0 auto;
+}
+
+#imgPoster {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 55px;
+  border: 10px outset var(--border-color-brown);
+  border-radius: 1.4rem;
+}
+
+/* CSS FORMULARIO */
+
+.bodyForm {
+  background: no-repeat center/cover url("../assets/img/fondo.jpg");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.formTitle {
+  color: var(--primary-color);
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.form {
+  width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid var(--green-neon);
+  background-color: var(--green-pastel);
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 0.4rem dotted var(--green-dark);
+  border-radius: 0.6rem;
+}
+
+.legendForm {
+  font-weight: bold;
+  font-size: var(--font-medium);
+  color: var(--green-main);
+}
+
+label {
+  display: block;
+  font-size: var(--font-small);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 2px;
+  margin: 5px 0 5px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: var(--font-small);
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.genderOptions {
+  display: flex;
+  justify-content: center;
+}
+
+.formButtons {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.formButtons input {
+  width: 110px;
+  padding: 0.7rem 1rem;
+}
+
+/* CSS TABLA */
+.bodyTabla {
+  background-color: var(--bgd-body-table);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table {
+  background-color: var(--bgd-table);
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 8px;
+  text-align: center;
+}
+
+.table td {
+  width: 60px;
+  height: 60px;
+}
+
+.table2 {
+  background-color: var(--bgd-table);
+  width: 50%;
+  height: 200px;
+  margin: 20px auto;
+  border-collapse: separate;
+  border-spacing: 8px;
+  text-align: center;
+}
+.primaryCell {
+  background-color: var(--primary-color);
+}
+
+.secondaryCell {
+  background-color: var(--secondary-color);
+}
+
+.lightCell {
+  background-color: var(--green-light);
+}
+
+.darkCell {
+  background-color: var(--green-dark);
+}
+
+.greenPastelCell {
+  background-color: var(--green-pastel);
+}
+
+.mainGreenCell {
+  background-color: var(--green-main);
+}
+
+.neonCell {
+  background-color: var(--green-neon);
+}
+
+.purpleCell {
+  background-color: var(--purple-color);
+}
+
+.largeText {
+  font-size: var(--font-large);
+  font-weight: bold;
+}
+
+.smallText {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+.largeText,
+.smallText {
+  display: block;
+}
